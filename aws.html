@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AWS work by Elanthingal Chandrasekaran: CDK infrastructure, event-driven Lambda workloads, and least-privilege design.">
+    <meta name="theme-color" content="#f3f0e9">
+    <title>AWS Work | Elanthingal Chandrasekaran</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2312212b'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-size='12' fill='%23fbfaf6'%3EEC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Elanthingal home">
+          <span class="brand-mark">EC</span>
+          <span>Elanthingal<span class="brand-muted"> / portfolio</span></span>
+        </a>
+        <a class="top-link" href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Let's connect <span aria-hidden="true">&#8599;</span></a>
+      </header>
+
+      <main id="top" class="subpage">
+        <div class="subpage-header">
+          <p class="eyebrow"><span class="pulse-dot"></span> CLOUD PATTERNS</p>
+          <h1>AWS <em>work</em></h1>
+          <p class="subpage-lede">
+            Cloud systems that are repeatable, secure, and diagnosable —
+            not a collection of manual console settings.
+          </p>
+          <nav class="subpage-nav" aria-label="Portfolio pages">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="ai.html">AI systems</a>
+            <a href="aws.html" aria-current="page">AWS work</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <h2>Infrastructure as code</h2>
+        <ul>
+          <li>AWS CDK stacks written in TypeScript</li>
+          <li>Environment-aware configuration and resource naming</li>
+          <li>Repeatable deployment patterns</li>
+          <li>Explicit network and security boundaries</li>
+        </ul>
+
+        <h2>Compute and events</h2>
+        <ul>
+          <li>AWS Lambda workloads for analysis and processing</li>
+          <li>SNS topics and Lambda subscriptions for event-driven flows</li>
+          <li>Runtime configuration, memory, timeout, and execution behavior</li>
+          <li>API integrations between internal services</li>
+        </ul>
+
+        <h2>Networking and security</h2>
+        <ul>
+          <li>VPC-connected workloads and private service endpoints</li>
+          <li>Security groups and controlled network access</li>
+          <li>IAM policies scoped to required actions</li>
+          <li>Operational access designed around explicit permissions</li>
+        </ul>
+
+        <h2>Architecture shape</h2>
+        <div class="mermaid">
+flowchart TD
+    A["Infrastructure as code (AWS CDK, TypeScript)"] --> B["Private network + scoped permissions (VPC, security groups, IAM)"]
+    B --> C["Event source (SNS)"]
+    C --> D["Lambda processing"]
+    D --> E["Service integration"]
+    E --> F["Observable outcome and actionable feedback"]
+    classDef compute fill:#0e7490,color:#fbfaf6,stroke:#0e7490
+    classDef outcome fill:#12212b,color:#b9eee8,stroke:#12212b
+    class C,D compute
+    class F outcome
+        </div>
+
+        <h2>Engineering approach</h2>
+        <ul>
+          <li>Prefer infrastructure that can be reviewed as code.</li>
+          <li>Make resource dependencies and permissions visible.</li>
+          <li>Design for failure, retries, timeouts, and useful logs.</li>
+          <li>Separate environment configuration from application behavior.</li>
+        </ul>
+      </main>
+
+      <span class="footer-wordmark" aria-hidden="true">ELANTHINGAL</span>
+      <footer class="footer">
+        <span>&copy; 2026 Elanthingal Chandrasekaran</span>
+        <span>Build feedback. Design for failure. Ship with confidence.</span>
+        <a href="index.html">&larr; Back to home</a>
+      </footer>
+    </div>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "base",
+        themeVariables: {
+          primaryColor: "#fbfaf6",
+          primaryTextColor: "#12212b",
+          primaryBorderColor: "#0e7490",
+          lineColor: "#ef633d",
+          fontFamily: "'DM Mono', monospace",
+          fontSize: "14px",
+          background: "#f3f0e9"
+        }
+      });
+    </script>
+  </body>
+</html>

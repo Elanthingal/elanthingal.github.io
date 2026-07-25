@@ -11,32 +11,32 @@
 <img src="./assets/header-aws.svg" alt="AWS Work" width="100%">
 
 <div align="center">
-  <img src="https://img.shields.io/badge/AWS%20CDK-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS CDK">
-  <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=black" alt="AWS Lambda">
-  <img src="https://img.shields.io/badge/Amazon%20SNS-FF4F8B?style=flat-square" alt="Amazon SNS">
-  <img src="https://img.shields.io/badge/Amazon%20VPC-232F3E?style=flat-square" alt="Amazon VPC">
-  <img src="https://img.shields.io/badge/AWS%20IAM-DD344C?style=flat-square" alt="AWS IAM">
+  <img src="https://img.shields.io/badge/AWS%20CDK-12212b?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS CDK">
+  <img src="https://img.shields.io/badge/AWS%20Lambda-ef633d?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Lambda">
+  <img src="https://img.shields.io/badge/Amazon%20SNS-0e7490?style=flat-square" alt="Amazon SNS">
+  <img src="https://img.shields.io/badge/Amazon%20VPC-12212b?style=flat-square" alt="Amazon VPC">
+  <img src="https://img.shields.io/badge/AWS%20IAM-ef633d?style=flat-square" alt="AWS IAM">
 </div>
 
 My AWS experience is centered on building cloud systems that are repeatable,
 secure, and diagnosable rather than treating infrastructure as a collection
 of manual console settings.
 
-## Infrastructure as Code
+<img src="./assets/h-iac.svg" alt="Infrastructure as Code" width="100%">
 
 - AWS CDK stacks written in TypeScript
 - Environment-aware configuration and resource naming
 - Repeatable deployment patterns
 - Explicit network and security boundaries
 
-## Compute and Events
+<img src="./assets/h-compute.svg" alt="Compute and Events" width="100%">
 
 - AWS Lambda workloads for analysis and processing
 - SNS topics and Lambda subscriptions for event-driven flows
 - Runtime configuration, memory, timeout, and execution behavior
 - API integrations between internal services
 
-## Networking and Security
+<img src="./assets/h-network.svg" alt="Networking and Security" width="100%">
 
 - VPC-connected workloads
 - Private service endpoints
@@ -44,7 +44,7 @@ of manual console settings.
 - IAM policies scoped to required actions
 - Operational access designed around explicit permissions
 
-## Engineering Approach
+<img src="./assets/h-approach.svg" alt="Engineering Approach" width="100%">
 
 - Prefer infrastructure that can be reviewed as code.
 - Make resource dependencies and permissions visible.
@@ -52,16 +52,20 @@ of manual console settings.
 - Separate environment configuration from application behavior.
 - Keep proprietary service names and implementation details private.
 
-## Architecture Shape
+<img src="./assets/h-arch-shape.svg" alt="Architecture Shape" width="100%">
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
-  "primaryColor": "#f3f0e9",
+  "background": "#fbfaf6",
+  "primaryColor": "#fbfaf6",
   "primaryTextColor": "#12212b",
-  "primaryBorderColor": "#0e7490",
+  "primaryBorderColor": "#d8d5cd",
   "lineColor": "#ef633d",
-  "fontFamily": "monospace",
-  "fontSize": "14px"
+  "edgeLabelBackground": "#fbfaf6",
+  "clusterBkg": "#f3f0e9",
+  "clusterBorder": "#d8d5cd",
+  "fontFamily": "Consolas, monospace",
+  "fontSize": "13px"
 }}}%%
 flowchart TD
     A["Infrastructure as code<br/>(AWS CDK, TypeScript)"] --> B["Private network + scoped permissions<br/>(VPC, security groups, IAM)"]
@@ -72,6 +76,8 @@ flowchart TD
 
     classDef compute fill:#0e7490,color:#fbfaf6,stroke:#0e7490
     classDef outcome fill:#12212b,color:#b9eee8,stroke:#12212b
+    classDef accent fill:#fbfaf6,color:#12212b,stroke:#ef633d
+    class A accent
     class C,D compute
     class F outcome
 ```
@@ -79,7 +85,7 @@ flowchart TD
 ---
 
 <p align="center">
-  <a href="README.md">← Back to home</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+  <a href="README.md"><img src="./assets/link-back-home.svg" alt="Back to home" height="30"></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/"><img src="./assets/link-connect-linkedin.svg" alt="Connect on LinkedIn" height="30"></a>
 </p>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 308" role="img" aria-label="03 / QUALITY PLATFORMS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 32" role="img" aria-label="YOUTUBE CHANNEL ↗">
   <style>
     @font-face {
       font-family: 'SG';
@@ -13,14 +13,8 @@
     .h { font-family: 'SG', 'Avenir Next', sans-serif; font-weight: 600; letter-spacing: -1px; }
     .m { font-family: 'DMM', Consolas, monospace; font-weight: 500; letter-spacing: 2px; }
     </style>
-  <g>
-    <rect x="8" y="8" width="374" height="292" fill="#ef633d"/>
-    <circle cx="362" cy="288" r="64" fill="none" stroke="#12212b" opacity=".18"/>
-    <text x="36" y="52" class="m" font-size="13" fill="#12212b">03 / QUALITY PLATFORMS</text>
-    <text x="36" y="108" class="h" font-size="30" fill="#12212b">Feedback that leads</text>
-    <text x="36" y="144" class="h" font-size="30" fill="#12212b">to a fix</text>
-    <text x="36" y="186" class="m" font-size="13" fill="#3d2317" opacity=".8" letter-spacing="0.5">Failure signals people can act on,</text>
-    <text x="36" y="208" class="m" font-size="13" fill="#3d2317" opacity=".8" letter-spacing="0.5">across services, web, and devices</text>
-    <text x="36" y="270" class="m" font-size="12" fill="#12212b">API / UI / MOBILE / DEVTOOLS</text>
-  </g>
+
+  <rect x="1" y="1" width="180" height="30" fill="#fbfaf6" stroke="#d8d5cd"/>
+  <text x="91.0" y="21" text-anchor="middle" class="m" font-size="12" fill="#ef633d">YOUTUBE CHANNEL ↗</text>
+
 </svg>

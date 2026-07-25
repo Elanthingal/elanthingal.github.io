@@ -12,7 +12,7 @@
 
 > Quality is a system of feedback, not a final checkpoint.
 
-## Quality Engineering
+<img src="./assets/h-quality-eng.svg" alt="Quality Engineering" width="100%">
 
 I design quality practices around risk, feedback speed, and diagnosability.
 The goal is not simply to create more tests; it is to create trustworthy
@@ -26,7 +26,7 @@ Areas I work across include:
 - Failure analysis and actionable diagnostics
 - Test framework design and long-term maintainability
 
-## Engineering Strengths
+<img src="./assets/h-strengths.svg" alt="Engineering Strengths" width="100%">
 
 ### Automation
 
@@ -60,7 +60,7 @@ I build deterministic evaluation around nondeterministic model behavior using
 curated ground truth, repeatable scenarios, structured verdicts, and explicit
 failure conditions.
 
-## Working Principles
+<img src="./assets/h-principles.svg" alt="Working Principles" width="100%">
 
 - Prefer fast, trustworthy feedback over noisy activity.
 - Make failure output actionable for the person who has to fix it.
@@ -68,7 +68,7 @@ failure conditions.
 - Treat deployment and operations as part of engineering quality.
 - Generalize reusable patterns without hiding important edge cases.
 
-## At A Glance
+<img src="./assets/h-glance.svg" alt="At a Glance" width="100%">
 
 | Signal | Approach |
 | --- | --- |
@@ -81,7 +81,7 @@ failure conditions.
 ---
 
 <p align="center">
-  <a href="README.md">← Back to home</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+  <a href="README.md"><img src="./assets/link-back-home.svg" alt="Back to home" height="30"></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/"><img src="./assets/link-connect-linkedin.svg" alt="Connect on LinkedIn" height="30"></a>
 </p>

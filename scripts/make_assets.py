@@ -10,7 +10,9 @@ Usage: python3 scripts/make_assets.py
 """
 
 import base64
+import json
 import pathlib
+import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FONTS = pathlib.Path(__file__).resolve().parent / "fonts"
@@ -70,6 +72,14 @@ def page_header(slug: str, eyebrow: str, heading: str, accent: str) -> None:
     svg(f"header-{slug}.svg", 1200, 120, body, heading)
 
 
+def card_height(title_lines: list, sub_lines: list, link: bool) -> int:
+    """Height needed so text never collides: content flows down, link gets its own band."""
+    h = 108 + 36 * len(title_lines) + 6 + 22 * len(sub_lines)
+    if link:
+        h += 44
+    return h + 18
+
+
 def card(x: int, w: int, h: int, bg: str, ring: str, index: str, index_fill: str,
          title_lines: list, title_fill: str, sub_lines: list, sub_fill: str,
          link_label: str = "", link_fill: str = "") -> str:
@@ -86,7 +96,7 @@ def card(x: int, w: int, h: int, bg: str, ring: str, index: str, index_fill: str
         parts.append(f'    <text x="{x + 28}" y="{y}" class="m" font-size="13" fill="{sub_fill}" opacity=".8" letter-spacing="0.5">{line}</text>')
         y += 22
     if link_label:
-        parts.append(f'    <text x="{x + 28}" y="{h - 18}" class="m" font-size="12" fill="{link_fill}">{link_label}</text>')
+        parts.append(f'    <text x="{x + 28}" y="{h - 22}" class="m" font-size="12" fill="{link_fill}">{link_label}</text>')
     parts.append('  </g>')
     return "\n".join(parts)
 
@@ -108,7 +118,7 @@ def pillars() -> None:
 
 
 def workbench() -> None:
-    h = 250
+    h = card_height(["x", "x"], ["x", "x", "x"], link=True)
     left = card(8, 586, h, INK, TEAL_LIGHT, "NOW BUILDING", TEAL_LIGHT,
                 ["Measurable AI quality"], PAPER_LIGHT,
                 ["Deterministic benchmarks for agents,", "quality gates for generated code,",
@@ -124,7 +134,7 @@ def workbench() -> None:
 
 
 def featured() -> None:
-    h = 230
+    h = card_height(["x", "x"], ["x", "x"], link=True)
     specs = [
         ("featured-ai.svg", INK, TEAL_LIGHT, "01 / AI SYSTEMS", TEAL_LIGHT,
          ["Agents with", "boundaries"], PAPER_LIGHT,
@@ -185,6 +195,100 @@ def hero() -> None:
         "Elanthingal Chandrasekaran — make complex software easier to trust. Quality engineering, cloud, AI systems.")
 
 
+def section_heading(slug: str, number: str, label: str) -> None:
+    """Full-width section heading bar used in the md pages instead of ## text."""
+    body = f"""
+  <rect width="1200" height="64" fill="{PAPER_LIGHT}"/>
+  <rect width="1200" height="64" fill="none" stroke="{LINE}"/>
+  <rect x="0" y="0" width="5" height="64" fill="{ORANGE}"/>
+  <text x="30" y="40" class="m" font-size="13" fill="{ORANGE}">{number}</text>
+  <text x="78" y="43" class="h" font-size="26" fill="{INK}">{label}</text>
+  <circle cx="1160" cy="32" r="4" fill="{TEAL}" opacity=".55"/>
+"""
+    svg(f"h-{slug}.svg", 1200, 64, body, label)
+
+
+def heartbeat() -> None:
+    """Full-history contribution 'heartbeat': weekly totals from account
+    creation to today, drawn as an ECG-style trace. Re-run this script to
+    refresh the data snapshot."""
+    url = "https://github-contributions-api.jogruber.de/v4/Elanthingal"
+    with urllib.request.urlopen(url, timeout=30) as resp:
+        data = json.load(resp)
+    days = sorted(data["contributions"], key=lambda d: d["date"])
+    total = sum(d["count"] for d in days)
+
+    # weekly buckets
+    weeks, bucket, bucket_year = [], 0, days[0]["date"][:4]
+    for i, d in enumerate(days):
+        bucket += d["count"]
+        if i % 7 == 6 or i == len(days) - 1:
+            weeks.append((d["date"][:4], bucket))
+            bucket = 0
+    peak = max(c for _, c in weeks) or 1
+
+    w, h = 1200, 300
+    left, right, top, bottom = 20, 20, 74, 60
+    plot_w, plot_h = w - left - right, h - top - bottom
+    n = len(weeks)
+    pts = []
+    for i, (_, c) in enumerate(weeks):
+        x = left + plot_w * i / max(n - 1, 1)
+        y = top + plot_h * (1 - c / peak)
+        pts.append(f"{x:.1f},{y:.1f}")
+    baseline = top + plot_h
+    line = " ".join(pts)
+    area = f"{left:.1f},{baseline:.1f} {line} {left + plot_w:.1f},{baseline:.1f}"
+
+    # year tick marks at each January boundary
+    ticks = []
+    seen = set()
+    for i, (year, _) in enumerate(weeks):
+        if year not in seen:
+            seen.add(year)
+            x = left + plot_w * i / max(n - 1, 1)
+            ticks.append(
+                f'  <line x1="{x:.0f}" y1="{baseline}" x2="{x:.0f}" y2="{baseline + 8}" stroke="{LINE}"/>\n'
+                f'  <text x="{x:.0f}" y="{baseline + 28}" text-anchor="middle" class="m" font-size="11" fill="{MUTED}">{year}</text>')
+
+    body = f"""
+  <rect width="{w}" height="{h}" fill="{INK}"/>
+  <circle cx="1140" cy="40" r="70" fill="none" stroke="{TEAL_LIGHT}" opacity=".14"/>
+  <circle cx="46" cy="40" r="4" fill="{ORANGE}"/>
+  <text x="66" y="45" class="m" font-size="13" fill="{TEAL_LIGHT}">COMMIT HEARTBEAT / {days[0]['date'][:4]} — PRESENT</text>
+  <text x="{w - 30}" y="45" text-anchor="end" class="h" font-size="22" fill="{PAPER_LIGHT}">{total:,} contributions</text>
+  <polygon points="{area}" fill="{TEAL}" opacity=".28"/>
+  <polyline points="{line}" fill="none" stroke="{TEAL_LIGHT}" stroke-width="1.6" stroke-linejoin="round"/>
+  <line x1="{left}" y1="{baseline}" x2="{left + plot_w}" y2="{baseline}" stroke="rgba(185,238,232,.3)"/>
+{"".join(ticks)}
+"""
+    # ticks render on dark bg — restyle their fills
+    body = body.replace(f'stroke="{LINE}"', 'stroke="rgba(185,238,232,.35)"')
+    body = body.replace(f'fill="{MUTED}"', 'fill="rgba(243,240,233,.55)"')
+    svg("heartbeat.svg", w, h, body,
+        f"Commit heartbeat: {total:,} GitHub contributions from {days[0]['date'][:4]} to present, shown as weekly activity")
+
+
+def tagline() -> None:
+    body = f"""
+  <text x="600" y="52" text-anchor="middle" class="h" font-size="40" fill="{INK}">Engineering systems that are <tspan fill="{TEAL}">easier to trust.</tspan></text>
+  <text x="600" y="96" text-anchor="middle" class="m" font-size="14.5" fill="{MUTED}">I am a Senior SDET building quality platforms, cloud automation, and</text>
+  <text x="600" y="120" text-anchor="middle" class="m" font-size="14.5" fill="{MUTED}">measurable AI workflows that turn complex failure into useful feedback.</text>
+"""
+    svg("tagline.svg", 1200, 140, body,
+        "Engineering systems that are easier to trust. I am a Senior SDET building quality platforms, cloud automation, and measurable AI workflows.")
+
+
+def motto() -> None:
+    body = f"""
+  <rect x="530" y="14" width="140" height="2" fill="{ORANGE}"/>
+  <text x="600" y="58" text-anchor="middle" class="h" font-size="24" fill="{INK}">Build feedback. Design for failure. Ship with confidence.</text>
+  <text x="600" y="92" text-anchor="middle" class="m" font-size="12.5" fill="{MUTED}">Thanks for stopping by. Follow along or reach out if you are building something difficult.</text>
+"""
+    svg("motto.svg", 1200, 112, body,
+        "Build feedback. Design for failure. Ship with confidence.")
+
+
 def nav_chips() -> None:
     # DM Mono at 12px is ~7.3px per char; chip width = text + padding
     items = [
@@ -205,9 +309,67 @@ def nav_chips() -> None:
         svg(f"nav-{slug}.svg", w, 32, body, label)
 
 
+def link_chips() -> None:
+    """Footer / call-to-action link chips: same shape as nav chips but in the
+    accent orange so they read as links on GitHub (where raw text links render
+    in default blue and cannot be CSS-styled)."""
+    items = [
+        ("back-home", "← BACK TO HOME"),
+        ("connect-linkedin", "CONNECT ON LINKEDIN ↗"),
+        ("open-site", "OPEN PORTFOLIO SITE ↗"),
+        ("work-with-me", "WORK WITH ME ↗"),
+        ("see-systems", "SEE THE SYSTEMS →"),
+        ("youtube", "YOUTUBE CHANNEL ↗"),
+        ("github", "GITHUB ↗"),
+        ("x", "X / TWITTER ↗"),
+        ("instagram", "INSTAGRAM ↗"),
+        ("linkedin", "LINKEDIN ↗"),
+    ]
+    for slug, label in items:
+        w = int(len(label) * 8.6) + 36
+        body = f"""
+  <rect x="1" y="1" width="{w - 2}" height="30" fill="{PAPER_LIGHT}" stroke="{LINE}"/>
+  <text x="{w / 2}" y="21" text-anchor="middle" class="m" font-size="12" fill="{ORANGE}">{label}</text>
+"""
+        svg(f"link-{slug}.svg", w, 32, body, label)
+
+
 if __name__ == "__main__":
     print("Generating SVG assets:")
+    for slug, num, label in [
+        ("workbench", "01", "The Workbench"),
+        ("featured", "02", "Featured Systems"),
+        ("toolbox", "03", "Toolbox"),
+        ("agent-design", "01", "Agent Design"),
+        ("architecture", "02", "Engineering Architecture"),
+        ("benchmarks", "03", "Deterministic Benchmarks"),
+        ("eval-patterns", "04", "Practical Evaluation Patterns"),
+        ("trustworthy", "05", "Making LLM Evaluation Trustworthy"),
+        ("why", "06", "Why This Matters"),
+        ("iac", "01", "Infrastructure as Code"),
+        ("compute", "02", "Compute and Events"),
+        ("network", "03", "Networking and Security"),
+        ("approach", "04", "Engineering Approach"),
+        ("arch-shape", "05", "Architecture Shape"),
+        ("quality-eng", "01", "Quality Engineering"),
+        ("strengths", "02", "Engineering Strengths"),
+        ("principles", "03", "Working Principles"),
+        ("glance", "04", "At a Glance"),
+        ("cloud-systems", "01", "Cloud Analysis and Automation"),
+        ("quality-platforms", "02", "Quality Engineering Platforms"),
+        ("ai-benchmarks", "03", "AI Agents and Benchmarks"),
+        ("self-hosted", "04", "Self-Hosted Automation"),
+        ("evaluate", "05", "How I Evaluate a System"),
+        ("activity", "04", "Commit Activity"),
+        ("youtube", "01", "YouTube"),
+        ("social", "02", "Social Profiles"),
+    ]:
+        section_heading(slug, num, label)
+    heartbeat()
+    tagline()
+    motto()
     nav_chips()
+    link_chips()
     hero()
     pillars()
     workbench()

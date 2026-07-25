@@ -53,6 +53,23 @@ a {
   text-decoration: none;
 }
 
+/* Content links (no utility class) pick up the accent so they read as links */
+main p a:not([class]),
+main li a:not([class]),
+main td a:not([class]) {
+  color: var(--orange);
+  font-weight: 600;
+  transition: color .2s ease;
+}
+
+main p a:not([class]):hover,
+main li a:not([class]):hover,
+main td a:not([class]):hover {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 :focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 3px;
@@ -779,24 +796,182 @@ h2 em {
   margin-top: 33px;
 }
 
+/* Content subpages (ai.html, projects.html, ...) */
+.subpage {
+  max-width: 780px;
+  padding: 70px 0 110px;
+}
+
+.subpage-header {
+  margin-bottom: 60px;
+}
+
+.subpage h1 {
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  margin-bottom: 18px;
+}
+
+.subpage-lede {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.subpage h2 {
+  margin-top: 80px;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.subpage h3 {
+  margin: 40px 0 10px;
+  font-size: 1.2rem;
+  letter-spacing: -.03em;
+}
+
+.subpage p,
+.subpage li {
+  color: var(--muted);
+  font-size: .96rem;
+}
+
+.subpage ul {
+  padding-left: 20px;
+}
+
+.subpage li {
+  margin-bottom: 8px;
+}
+
+.subpage li::marker {
+  color: var(--orange);
+}
+
+.subpage strong {
+  color: var(--ink);
+}
+
+.subpage table {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+
+.subpage th {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.subpage th,
+.subpage td {
+  padding: 12px 16px 12px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.subpage td:first-child {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.subpage blockquote {
+  margin: 0 0 40px;
+  padding-left: 22px;
+  border-left: 2px solid var(--orange);
+  color: var(--ink);
+  font-size: 1.15rem;
+  letter-spacing: -.02em;
+}
+
+.subpage-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 30px 0;
+  padding: 26px 28px;
+  color: var(--paper-light);
+  background: var(--dark);
+}
+
+.subpage-flow div {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 11px 0;
+}
+
+.subpage-flow div + div {
+  border-top: 1px solid rgba(185, 238, 232, .16);
+}
+
+.subpage-flow .step-number {
+  min-width: 22px;
+}
+
+.subpage-flow small {
+  color: rgba(243, 240, 233, .55);
+  font-family: var(--mono);
+  font-size: .64rem;
+}
+
+.subpage-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.subpage-nav a {
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: rgba(255, 255, 255, .35);
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.subpage-nav a:hover,
+.subpage-nav a[aria-current] {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
 .footer-wordmark {
   display: block;
   padding-top: 90px;
   overflow: hidden;
   border-top: 1px solid var(--line);
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(18, 33, 43, .22);
+  color: rgba(18, 33, 43, .08);
   font-size: clamp(3rem, 11.5vw, 9.5rem);
   font-weight: 700;
   letter-spacing: -.05em;
   line-height: .82;
   text-align: center;
   user-select: none;
-  transition: -webkit-text-stroke-color .4s ease;
 }
 
-.footer-wordmark:hover {
-  -webkit-text-stroke-color: var(--teal);
+@supports (-webkit-text-stroke: 1px black) {
+  .footer-wordmark {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(18, 33, 43, .22);
+    transition: -webkit-text-stroke-color .4s ease;
+  }
+
+  .footer-wordmark:hover {
+    -webkit-text-stroke-color: var(--teal);
+  }
+}
+
+.footer .footer-tagline {
+  color: var(--muted);
 }
 
 .footer {

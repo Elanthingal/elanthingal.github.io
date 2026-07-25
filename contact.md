@@ -11,25 +11,28 @@
 <img src="./assets/header-contact.svg" alt="Contact" width="100%">
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Open_to_conversations-0f766e?style=flat-square" alt="Open to conversations">
+  <img src="https://img.shields.io/badge/Open_to_conversations-0e7490?style=flat-square" alt="Open to conversations">
 </div>
 
-The best place to learn about my professional background is my
-[LinkedIn profile](https://www.linkedin.com/in/elanthingal-chandrasekaran/).
+The best place to learn about my professional background is my LinkedIn profile:
+
+<a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/"><img src="./assets/link-linkedin.svg" alt="LinkedIn profile" height="30"></a>
 
 You can also find my public work and updates here:
 
-- [GitHub](https://github.com/Elanthingal)
-- [YouTube](https://www.youtube.com/@elanthingalc)
-- [X](https://x.com/elanthingal)
-- [Instagram](https://www.instagram.com/elanthingal)
+<p>
+  <a href="https://github.com/Elanthingal"><img src="./assets/link-github.svg" alt="GitHub" height="30"></a>
+  <a href="https://www.youtube.com/@elanthingalc"><img src="./assets/link-youtube.svg" alt="YouTube" height="30"></a>
+  <a href="https://x.com/elanthingal"><img src="./assets/link-x.svg" alt="X" height="30"></a>
+  <a href="https://www.instagram.com/elanthingal"><img src="./assets/link-instagram.svg" alt="Instagram" height="30"></a>
+</p>
 
 For professional opportunities, please reach out through LinkedIn.
 
 ---
 
 <p align="center">
-  <a href="README.md">← Back to home</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+  <a href="README.md"><img src="./assets/link-back-home.svg" alt="Back to home" height="30"></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/"><img src="./assets/link-connect-linkedin.svg" alt="Connect on LinkedIn" height="30"></a>
 </p>

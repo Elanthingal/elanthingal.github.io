@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AI systems by Elanthingal Chandrasekaran: bounded agents, deterministic benchmarks, and evidence-based evaluation.">
+    <meta name="theme-color" content="#f3f0e9">
+    <title>AI Systems | Elanthingal Chandrasekaran</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2312212b'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-size='12' fill='%23fbfaf6'%3EEC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Elanthingal home">
+          <span class="brand-mark">EC</span>
+          <span>Elanthingal<span class="brand-muted"> / portfolio</span></span>
+        </a>
+        <a class="top-link" href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Let's connect <span aria-hidden="true">&#8599;</span></a>
+      </header>
+
+      <main id="top" class="subpage">
+        <div class="subpage-header">
+          <p class="eyebrow"><span class="pulse-dot"></span> AGENTS AND EVALUATION</p>
+          <h1>AI <em>Systems</em></h1>
+          <p class="subpage-lede">
+            Agents for engineering workflows where the output must be useful,
+            reviewable, and safe to operate.
+          </p>
+          <nav class="subpage-nav" aria-label="Portfolio pages">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="ai.html" aria-current="page">AI systems</a>
+            <a href="aws.html">AWS work</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <h2>Agent design</h2>
+        <p>
+          The design goal is a bounded engineering system, not an unconstrained
+          chatbot. Tools, context, permissions, and completion criteria are all
+          explicit. Typical capabilities:
+        </p>
+        <ul>
+          <li>Test authoring and scenario generation</li>
+          <li>Python-to-TypeScript test migration</li>
+          <li>Test validation and stabilization</li>
+          <li>Runtime investigation through scoped tools</li>
+          <li>Skill and SOP loading based on the task</li>
+          <li>Structured summaries of work performed and remaining gaps</li>
+        </ul>
+
+        <h2>Engineering architecture</h2>
+        <p>The systems are organized as a pipeline rather than a single model call:</p>
+        <table>
+          <tr><th>Layer</th><th>Responsibility</th></tr>
+          <tr><td>Task contract</td><td>Define the scenario, inputs, expected artifacts, and failure conditions</td></tr>
+          <tr><td>Agent runtime</td><td>Load the relevant skills and SOPs, then use only scoped tools</td></tr>
+          <tr><td>Execution boundary</td><td>Separate authoring, validation, and optional runtime execution</td></tr>
+          <tr><td>Evaluation gates</td><td>Apply deterministic checks before semantic judging</td></tr>
+          <tr><td>Evidence flow</td><td>Persist artifacts, verdicts, diagnostics, and upload metadata</td></tr>
+        </table>
+        <p>
+          This separation makes it possible to distinguish an agent defect from
+          a tool, infrastructure, or environment failure.
+        </p>
+
+        <h2>Deterministic benchmarks</h2>
+        <p>Agent quality needs a repeatable measurement layer:</p>
+        <div class="mermaid">
+flowchart TD
+    A["Curated ground truth"] --> B["Repeatable commit or scenario data"]
+    B --> C["Agent tool calls"]
+    C --> D["Deterministic gates (exact checks first)"]
+    D --> E["Semantic judging (only where exact checks fall short)"]
+    E --> F["Structured verdict + evidence report"]
+    classDef gate fill:#0e7490,color:#fbfaf6,stroke:#0e7490
+    classDef verdict fill:#12212b,color:#b9eee8,stroke:#12212b
+    class D,E gate
+    class F verdict
+        </div>
+        <table>
+          <tr><th>Verdict</th><th>Meaning</th></tr>
+          <tr><td>Match</td><td>The agent identifies the key expected result</td></tr>
+          <tr><td>Partial match</td><td>The agent identifies part of the expected result</td></tr>
+          <tr><td>Miss</td><td>The agent fails to identify the important result</td></tr>
+          <tr><td>Error</td><td>The evaluation could not complete reliably</td></tr>
+        </table>
+
+        <h2>Making LLM evaluation trustworthy</h2>
+        <ul>
+          <li>Keep scenario inputs and expected outcomes versioned.</li>
+          <li>Use deterministic string or rule checks for safety-critical conditions.</li>
+          <li>Use semantic judging only where exact matching is insufficient.</li>
+          <li>Record evidence, not just a score.</li>
+          <li>Separate agent quality from infrastructure or tool failures.</li>
+          <li>Re-run misses and partial matches through a diagnosis workflow.</li>
+        </ul>
+
+        <h2>Why this matters</h2>
+        <p>
+          The goal is not to make an agent appear intelligent. The goal is to
+          know when it is correct, when it is uncertain, and when it should not
+          be trusted.
+        </p>
+      </main>
+
+      <span class="footer-wordmark" aria-hidden="true">ELANTHINGAL</span>
+      <footer class="footer">
+        <span>&copy; 2026 Elanthingal Chandrasekaran</span>
+        <span>Build feedback. Design for failure. Ship with confidence.</span>
+        <a href="index.html">&larr; Back to home</a>
+      </footer>
+    </div>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "base",
+        themeVariables: {
+          primaryColor: "#fbfaf6",
+          primaryTextColor: "#12212b",
+          primaryBorderColor: "#0e7490",
+          lineColor: "#ef633d",
+          fontFamily: "'DM Mono', monospace",
+          fontSize: "14px",
+          background: "#f3f0e9"
+        }
+      });
+    </script>
+  </body>
+</html>
