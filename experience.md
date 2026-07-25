@@ -1,4 +1,15 @@
+<div align="center">
+  <a href="README.md">Home</a> ·
+  <a href="experience.md">Experience</a> ·
+  <a href="projects.md">Projects</a> ·
+  <a href="aws.md">AWS work</a> ·
+  <a href="content.md">Content</a> ·
+  <a href="contact.md">Contact</a>
+</div>
+
 # Experience
+
+> Quality is a system of feedback, not a final checkpoint.
 
 ## Quality Engineering
 
@@ -43,3 +54,12 @@ and operational behavior under real-world conditions.
 - Keep automation simple enough for the team to maintain.
 - Treat deployment and operations as part of engineering quality.
 - Generalize reusable patterns without hiding important edge cases.
+
+## At A Glance
+
+| Signal | Approach |
+| --- | --- |
+| Feedback | Fast enough to use every day |
+| Automation | Deterministic, readable, and actionable |
+| Operations | Explicit boundaries, timeouts, and recovery paths |
+| Collaboration | Clear evidence and practical next actions |

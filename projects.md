@@ -1,4 +1,17 @@
+<div align="center">
+  <a href="README.md">Home</a> ·
+  <a href="experience.md">Experience</a> ·
+  <a href="projects.md">Projects</a> ·
+  <a href="aws.md">AWS work</a> ·
+  <a href="content.md">Content</a> ·
+  <a href="contact.md">Contact</a>
+</div>
+
 # Projects
+
+<div align="center">
+  <strong>Problem → Architecture → Operational outcome</strong>
+</div>
 
 This page describes the kinds of systems I build. Proprietary work is
 intentionally summarized at an architectural level.
@@ -50,3 +63,10 @@ controls.
 
 For every project, I aim to make the architecture understandable, the failure
 mode visible, and the next operational action obvious.
+
+## How I Evaluate a System
+
+1. Can another engineer understand the main path quickly?
+2. Does failure produce enough evidence to diagnose the cause?
+3. Are permissions, timeouts, retries, and state boundaries explicit?
+4. Can the system be deployed, operated, and recovered safely?

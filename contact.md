@@ -1,4 +1,17 @@
+<div align="center">
+  <a href="README.md">Home</a> ·
+  <a href="experience.md">Experience</a> ·
+  <a href="projects.md">Projects</a> ·
+  <a href="aws.md">AWS work</a> ·
+  <a href="content.md">Content</a> ·
+  <a href="contact.md">Contact</a>
+</div>
+
 # Contact
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Open_to_conversations-0f766e?style=flat-square" alt="Open to conversations">
+</div>
 
 The best place to learn about my professional background is my
 [LinkedIn profile](https://www.linkedin.com/in/elanthingal-chandrasekaran/).

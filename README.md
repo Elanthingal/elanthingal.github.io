@@ -1,9 +1,5 @@
 <div align="center">
-  <h1>Elanthingal Chandrasekaran</h1>
-  <p>
-    <strong>Senior Software Development Engineer in Test</strong><br>
-    Quality engineering, test automation, cloud systems, and reliable delivery
-  </p>
+  <img src="./assets/profile-hero.svg" alt="Elanthingal Chandrasekaran - quality engineering and cloud systems" width="100%">
   <p>
     <a href="experience.md">Experience</a> ·
     <a href="projects.md">Projects</a> ·
@@ -30,23 +26,52 @@
   </p>
 </div>
 
-## Profile
+<p align="center">
+  <img src="https://img.shields.io/github/followers/Elanthingal?style=flat-square&label=Followers" alt="GitHub followers">
+  <img src="https://img.shields.io/github/watchers/Elanthingal/Elanthingal?style=flat-square&label=Profile%20watchers" alt="Profile repository watchers">
+</p>
 
-I build practical quality engineering systems that help teams ship reliable
-software with confidence. My work combines test strategy, automation,
-service-level validation, developer tooling, and hands-on debugging.
+## The Short Version
 
-I care about fast feedback, maintainable systems, and making failures easier
-to understand and fix.
+I am a Senior Software Development Engineer in Test focused on quality
+engineering, test automation, cloud systems, and reliable software delivery.
+I build practical systems that make feedback faster and failures easier to
+understand.
+
+> Good engineering turns complexity into a system people can trust.
 
 ## What I Build
 
-| Focus | What it looks like |
-| --- | --- |
-| Quality engineering | Risk-based validation, release confidence, and useful failure signals |
-| Test automation | Maintainable automation across services, web, and mobile experiences |
-| Cloud systems | Infrastructure as code, event-driven workloads, private networking, and IAM |
-| Developer tooling | Tools and workflows that improve feedback loops and productivity |
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Quality engineering</strong><br>
+      Risk-based validation, release confidence, and useful failure signals.
+    </td>
+    <td width="50%">
+      <strong>Cloud systems</strong><br>
+      AWS infrastructure, event-driven workloads, private networking, and IAM.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Test automation</strong><br>
+      Maintainable automation across services, web, and mobile experiences.
+    </td>
+    <td>
+      <strong>Developer tooling</strong><br>
+      Tools and workflows that improve feedback loops and productivity.
+    </td>
+  </tr>
+</table>
+
+## Selected Themes
+
+| Quality | Cloud | Operations |
+| --- | --- | --- |
+| Test strategy and automation | AWS CDK and Lambda | Failure analysis |
+| API, UI, and mobile validation | SNS, VPC, and IAM | Deployment safety |
+| Release confidence | Infrastructure as code | Observable systems |
 
 ## Core Stack
 
@@ -60,8 +85,10 @@ to understand and fix.
 
 ## Explore
 
-- [Experience](experience.md) - engineering strengths and working principles
-- [Projects](projects.md) - selected systems and the problems they solve
-- [AWS work](aws.md) - cloud architecture and infrastructure experience
-- [Content](content.md) - videos and public channels
-- [Contact](contact.md) - professional and social profiles
+| Page | What you will find |
+| --- | --- |
+| [Experience](experience.md) | Engineering strengths and working principles |
+| [Projects](projects.md) | Systems, problems, and architectural themes |
+| [AWS work](aws.md) | Cloud infrastructure and event-driven design |
+| [Content](content.md) | Videos and public channels |
+| [Contact](contact.md) | Professional and social profiles |

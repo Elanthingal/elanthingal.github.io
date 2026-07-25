@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Elanthingal Chandrasekaran</title>
+  <desc id="desc">Senior software development engineer in test focused on quality engineering and cloud systems.</desc>
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101827"/>
+      <stop offset="50%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67e8f9">
+        <animate attributeName="stop-color" values="#67e8f9;#a7f3d0;#67e8f9" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#a7f3d0">
+        <animate attributeName="stop-color" values="#a7f3d0;#67e8f9;#a7f3d0" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="280" rx="24" fill="url(#background)"/>
+  <path d="M0 218 C170 150 260 260 430 188 S720 115 860 170 S1080 260 1200 136"
+        fill="none" stroke="url(#line)" stroke-width="3" opacity=".9" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="1 24;24 1;1 24" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="1010" cy="74" r="5" fill="#a7f3d0">
+    <animate attributeName="cy" values="74;58;74" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".35;1;.35" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="116" r="3" fill="#67e8f9">
+    <animate attributeName="cy" values="116;132;116" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;.3;1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="72" y="106" fill="#f8fafc" font-family="sans-serif" font-size="42" font-weight="700">
+    Elanthingal Chandrasekaran
+  </text>
+  <text x="76" y="148" fill="#cffafe" font-family="sans-serif" font-size="21">
+    Senior SDET  /  Quality Engineering  /  Cloud Systems
+  </text>
+  <text x="76" y="188" fill="#bae6fd" font-family="monospace" font-size="15">
+    build feedback  •  design for failure  •  ship with confidence
+  </text>
+</svg>
