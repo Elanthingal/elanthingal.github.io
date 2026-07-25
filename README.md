@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/profile-hero.svg" alt="Elanthingal Chandrasekaran - quality engineering and cloud systems" width="100%">
   <p>
-    <a href="https://elanthingal.github.io/Elanthingal/"><strong>Open portfolio site &nearr;</strong></a>
+    <a href="https://elanthingal.github.io/"><strong>Open portfolio site &nearr;</strong></a>
     &nbsp;&middot;&nbsp;
     <a href="experience.md">Experience</a> ·
     <a href="projects.md">Projects</a> ·
