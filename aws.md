@@ -55,12 +55,25 @@ of manual console settings.
 ## Architecture Shape
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {
+  "primaryColor": "#f3f0e9",
+  "primaryTextColor": "#12212b",
+  "primaryBorderColor": "#0e7490",
+  "lineColor": "#ef633d",
+  "fontFamily": "monospace",
+  "fontSize": "14px"
+}}}%%
 flowchart TD
     A["Infrastructure as code<br/>(AWS CDK, TypeScript)"] --> B["Private network + scoped permissions<br/>(VPC, security groups, IAM)"]
     B --> C["Event source<br/>(SNS)"]
     C --> D["Lambda processing"]
     D --> E["Service integration"]
     E --> F["Observable outcome<br/>and actionable feedback"]
+
+    classDef compute fill:#0e7490,color:#fbfaf6,stroke:#0e7490
+    classDef outcome fill:#12212b,color:#b9eee8,stroke:#12212b
+    class C,D compute
+    class F outcome
 ```
 
 ---

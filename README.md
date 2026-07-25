@@ -50,30 +50,9 @@
 
 <br>
 
-<table>
-  <tr>
-    <td align="center" width="25%">
-      <strong>01</strong><br>
-      <sub>QUALITY</sub><br>
-      Test strategy<br>and release confidence
-    </td>
-    <td align="center" width="25%">
-      <strong>02</strong><br>
-      <sub>CLOUD</sub><br>
-      Event-driven<br>AWS systems
-    </td>
-    <td align="center" width="25%">
-      <strong>03</strong><br>
-      <sub>AI SYSTEMS</sub><br>
-      Agents with<br>bounded behavior
-    </td>
-    <td align="center" width="25%">
-      <strong>04</strong><br>
-      <sub>OPERATIONS</sub><br>
-      Observable paths<br>and safe recovery
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/pillars.svg" alt="Four disciplines: 01 quality — test strategy and release confidence; 02 cloud — event-driven AWS; 03 AI systems — bounded agents; 04 operations — safe recovery" width="100%">
+</div>
 
 ## The Workbench
 

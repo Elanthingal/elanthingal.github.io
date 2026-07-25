@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" role="img" aria-labelledby="ptitle">
+  <title id="ptitle">Four disciplines: quality engineering, cloud systems, AI systems, operations</title>
+  <style>
+    .card { fill: #fbfaf6; stroke: #d8d5cd; }
+    .card-dark { fill: #12212b; stroke: #12212b; }
+    .card-teal { fill: #0e7490; stroke: #0e7490; }
+    .card-orange { fill: #ef633d; stroke: #ef633d; }
+    .num { font: 500 13px "DM Mono", Consolas, monospace; fill: #ef633d; letter-spacing: 2px; }
+    .num-light { fill: #b9eee8; }
+    .label { font: 700 22px "Space Grotesk", "Avenir Next", sans-serif; letter-spacing: -0.5px; fill: #12212b; }
+    .label-light { fill: #fbfaf6; }
+    .sub { font: 400 13.5px "Space Grotesk", "Avenir Next", sans-serif; fill: #66727a; }
+    .sub-light { fill: #f3f0e9; opacity: .75; }
+    .ring { fill: none; stroke-width: 1; opacity: .18; }
+  </style>
+
+  <!-- 01 quality: paper card -->
+  <g>
+    <rect x="8" y="8" width="284" height="174" class="card"/>
+    <circle cx="270" cy="170" r="60" class="ring" stroke="#12212b"/>
+    <text x="34" y="48" class="num">01 / QUALITY</text>
+    <text x="34" y="104" class="label">Test strategy</text>
+    <text x="34" y="138" class="sub">Release confidence and</text>
+    <text x="34" y="158" class="sub">trustworthy signals</text>
+  </g>
+
+  <!-- 02 cloud: dark card -->
+  <g>
+    <rect x="306" y="8" width="284" height="174" class="card-dark"/>
+    <circle cx="568" cy="170" r="60" class="ring" stroke="#b9eee8"/>
+    <text x="332" y="48" class="num num-light">02 / CLOUD</text>
+    <text x="332" y="104" class="label label-light">Event-driven AWS</text>
+    <text x="332" y="138" class="sub sub-light">Explicit ownership and</text>
+    <text x="332" y="158" class="sub sub-light">least-privilege design</text>
+  </g>
+
+  <!-- 03 ai: teal card -->
+  <g>
+    <rect x="604" y="8" width="284" height="174" class="card-teal"/>
+    <circle cx="866" cy="170" r="60" class="ring" stroke="#b9eee8"/>
+    <text x="630" y="48" class="num num-light">03 / AI SYSTEMS</text>
+    <text x="630" y="104" class="label label-light">Bounded agents</text>
+    <text x="630" y="138" class="sub sub-light">Scoped tools, evidence,</text>
+    <text x="630" y="158" class="sub sub-light">deterministic gates</text>
+  </g>
+
+  <!-- 04 operations: orange card -->
+  <g>
+    <rect x="902" y="8" width="284" height="174" class="card-orange"/>
+    <circle cx="1164" cy="170" r="60" class="ring" stroke="#12212b"/>
+    <text x="928" y="48" class="num" fill="#12212b" style="fill:#12212b">04 / OPERATIONS</text>
+    <text x="928" y="104" class="label">Safe recovery</text>
+    <text x="928" y="138" class="sub" style="fill:#3d2317">Observable paths and</text>
+    <text x="928" y="158" class="sub" style="fill:#3d2317">obvious next actions</text>
+  </g>
+</svg>

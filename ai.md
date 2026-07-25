@@ -53,12 +53,25 @@ infrastructure, or environment failure.
 Agent quality needs a repeatable measurement layer. My benchmark approach uses:
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {
+  "primaryColor": "#f3f0e9",
+  "primaryTextColor": "#12212b",
+  "primaryBorderColor": "#0e7490",
+  "lineColor": "#ef633d",
+  "fontFamily": "monospace",
+  "fontSize": "14px"
+}}}%%
 flowchart TD
     A["Curated ground truth"] --> B["Repeatable commit or scenario data"]
     B --> C["Agent tool calls"]
     C --> D["Deterministic gates<br/>(exact checks first)"]
     D --> E["Semantic judging<br/>(only where exact checks fall short)"]
     E --> F["Structured verdict + evidence report"]
+
+    classDef gate fill:#0e7490,color:#fbfaf6,stroke:#0e7490
+    classDef verdict fill:#12212b,color:#b9eee8,stroke:#12212b
+    class D,E gate
+    class F verdict
 ```
 
 Evaluation can classify outcomes as:
