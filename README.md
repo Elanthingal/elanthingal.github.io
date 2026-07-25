@@ -29,11 +29,6 @@
   </p>
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/github/followers/Elanthingal?style=flat-square&label=Followers" alt="GitHub followers">
-  <img src="https://img.shields.io/github/watchers/Elanthingal/Elanthingal?style=flat-square&label=Profile%20watchers" alt="Profile repository watchers">
-</p>
-
 <h2 align="center">Engineering systems that are easier to trust.</h2>
 
 <p align="center">
@@ -43,7 +38,7 @@
 </p>
 
 <p align="center">
-  <a href="contact.md"><strong>Work with me</strong></a>
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/"><strong>Work with me</strong></a>
   &nbsp;&nbsp;&nbsp;
   <a href="projects.md"><strong>See the systems</strong></a>
 </p>
@@ -52,22 +47,22 @@
 
 <table>
   <tr>
-    <td align="center" width="25%" bgcolor="#f0fdfa">
+    <td align="center" width="25%">
       <strong>01</strong><br>
       <sub>QUALITY</sub><br>
       Test strategy<br>and release confidence
     </td>
-    <td align="center" width="25%" bgcolor="#eff6ff">
+    <td align="center" width="25%">
       <strong>02</strong><br>
       <sub>CLOUD</sub><br>
       Event-driven<br>AWS systems
     </td>
-    <td align="center" width="25%" bgcolor="#f8fafc">
+    <td align="center" width="25%">
       <strong>03</strong><br>
       <sub>AI SYSTEMS</sub><br>
       Agents with<br>bounded behavior
     </td>
-    <td align="center" width="25%" bgcolor="#fff7ed">
+    <td align="center" width="25%">
       <strong>04</strong><br>
       <sub>OPERATIONS</sub><br>
       Observable paths<br>and safe recovery
@@ -139,7 +134,7 @@
   <img src="https://img.shields.io/badge/Python-0f766e?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/TypeScript-1d4ed8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/JavaScript-854d0e?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
-  <img src="https://img.shields.io/badge/AWS-111827?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/AWS-111827?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS">
   <img src="https://img.shields.io/badge/Docker-0369a1?style=flat-square&logo=docker&logoColor=white" alt="Docker">
   <img src="https://img.shields.io/badge/Linux-1f2937?style=flat-square&logo=linux&logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/GraphQL-7c2d12?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL">
@@ -156,23 +151,6 @@
 </p>
 
 </details>
-
-## Explore
-
-<table>
-  <tr>
-    <td><a href="experience.md"><strong>Experience</strong></a><br><sub>Principles and strengths</sub></td>
-    <td><a href="projects.md"><strong>Projects</strong></a><br><sub>Architecture and outcomes</sub></td>
-    <td><a href="ai.md"><strong>AI systems</strong></a><br><sub>Agents and evaluation</sub></td>
-  </tr>
-  <tr>
-    <td><a href="aws.md"><strong>AWS work</strong></a><br><sub>Cloud patterns</sub></td>
-    <td><a href="content.md"><strong>Content</strong></a><br><sub>Videos and channels</sub></td>
-    <td><a href="contact.md"><strong>Contact</strong></a><br><sub>Find me online</sub></td>
-  </tr>
-</table>
-
-<br>
 
 <p align="center">
   <strong>Build feedback. Design for failure. Ship with confidence.</strong>
