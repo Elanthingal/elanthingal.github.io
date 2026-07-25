@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Elanthingal Chandrasekaran — make complex software easier to trust. Quality engineering, cloud, AI systems.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 246" role="img" aria-label="03 / QUALITY PLATFORMS">
   <style>
     @font-face {
       font-family: 'SG';
@@ -13,40 +13,14 @@
     .h { font-family: 'SG', 'Avenir Next', sans-serif; font-weight: 600; letter-spacing: -1px; }
     .m { font-family: 'DMM', Consolas, monospace; font-weight: 500; letter-spacing: 2px; }
     </style>
-
-  <rect width="1200" height="300" fill="#f3f0e9"/>
-  <rect width="1200" height="300" fill="url(#wash)"/>
-  <defs>
-    <radialGradient id="wash" cx="85%" cy="0%" r="70%">
-      <stop offset="0%" stop-color="#b9eee8" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#b9eee8" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- orbit visual, echoing the site signal board -->
-  <g transform="translate(985, 150)">
-    <circle r="118" fill="none" stroke="#0e7490" opacity=".3"/>
-    <circle r="74" fill="none" stroke="#0e7490" opacity=".45"/>
-    <circle r="46" fill="#0e7490"/>
-    <text y="-2" text-anchor="middle" class="h" font-size="30" fill="#fbfaf6">+</text>
-    <text y="22" text-anchor="middle" class="m" font-size="10" fill="#b9eee8">TRUST</text>
-    <circle cx="0" cy="-74" r="5" fill="#ef633d">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="-118" r="4" fill="#ef633d" opacity=".8">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
-    </circle>
+  <g>
+    <rect x="8" y="8" width="374" height="230" fill="#ef633d"/>
+    <circle cx="362" cy="226" r="64" fill="none" stroke="#12212b" opacity=".18"/>
+    <text x="36" y="52" class="m" font-size="13" fill="#12212b">03 / QUALITY PLATFORMS</text>
+    <text x="36" y="108" class="h" font-size="30" fill="#12212b">Feedback that leads</text>
+    <text x="36" y="144" class="h" font-size="30" fill="#12212b">to a fix</text>
+    <text x="36" y="186" class="m" font-size="13" fill="#3d2317" opacity=".8" letter-spacing="0.5">Failure signals people can act on,</text>
+    <text x="36" y="208" class="m" font-size="13" fill="#3d2317" opacity=".8" letter-spacing="0.5">across services, web, and devices</text>
+    <text x="36" y="212" class="m" font-size="12" fill="#12212b">API / UI / MOBILE / DEVTOOLS</text>
   </g>
-
-  <circle cx="52" cy="64" r="4.5" fill="#ef633d">
-    <animate attributeName="opacity" values="1;.35;1" dur="2.6s" repeatCount="indefinite"/>
-  </circle>
-  <text x="72" y="69" class="m" font-size="14" fill="#0e7490">QUALITY ENGINEERING · CLOUD · AI SYSTEMS</text>
-
-  <text x="50" y="146" class="h" font-size="62" fill="#12212b">Make complex software</text>
-  <text x="50" y="212" class="h" font-size="62" fill="#0e7490">easier to trust.</text>
-
-  <text x="52" y="262" class="m" font-size="14" fill="#66727a" letter-spacing="1">
-    <tspan fill="#ef633d">—</tspan> Build feedback. Design for failure. Ship with confidence.</text>
-
 </svg>

@@ -8,7 +8,7 @@
   <a href="contact.md">Contact</a>
 </div>
 
-# Projects
+<img src="./assets/header-projects.svg" alt="Projects" width="100%">
 
 <div align="center">
   <strong>Problem → Architecture → Operational outcome</strong>

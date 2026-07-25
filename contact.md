@@ -8,7 +8,7 @@
   <a href="contact.md">Contact</a>
 </div>
 
-# Contact
+<img src="./assets/header-contact.svg" alt="Contact" width="100%">
 
 <div align="center">
   <img src="https://img.shields.io/badge/Open_to_conversations-0f766e?style=flat-square" alt="Open to conversations">

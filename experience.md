@@ -8,7 +8,7 @@
   <a href="contact.md">Contact</a>
 </div>
 
-# Experience
+<img src="./assets/header-experience.svg" alt="Experience" width="100%">
 
 > Quality is a system of feedback, not a final checkpoint.
 

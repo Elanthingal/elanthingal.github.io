@@ -56,59 +56,17 @@
 
 ## The Workbench
 
-<table>
-  <tr>
-    <td width="52%" valign="top">
-      <h3>What I am building</h3>
-      <p>
-        Practical engineering tools that make feedback faster, failures
-        clearer, and delivery safer.
-      </p>
-      <p>
-        <strong>Now:</strong> deterministic benchmarks for AI agents,
-        quality gates for generated code, and self-hosted automation with
-        explicit operator controls.
-      </p>
-      <p>
-        <a href="ai.md">Open the AI systems page &rarr;</a>
-      </p>
-    </td>
-    <td width="48%" valign="top">
-      <h3>How I work</h3>
-      <p>
-        <code>Understand</code> &rarr; <code>Design</code> &rarr;
-        <code>Validate</code> &rarr; <code>Operate</code>
-      </p>
-      <p>
-        I care about the path after the happy path: timeouts, permissions,
-        retries, diagnostics, rollback, and the next action after failure.
-      </p>
-      <p>
-        <a href="experience.md">Read my engineering principles &rarr;</a>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="ai.md"><img src="./assets/workbench.svg" alt="Now building: measurable AI quality — deterministic benchmarks for agents, quality gates for generated code, self-hosted automation. How I work: understand, design, validate, operate — the path after the happy path." width="100%"></a>
+</div>
 
 ## Featured Systems
 
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <h3><a href="ai.md">AI agents</a></h3>
-      <p>Skills, SOPs, scoped tools, runtime boundaries, and evidence-based evaluation.</p>
-      <sub>AGENT DESIGN / BENCHMARKS / QUALITY GATES</sub>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="aws.md">Cloud systems</a></h3>
-      <p>Infrastructure and event-driven workloads designed for clear ownership and safe delivery.</p>
-      <sub>AWS CDK / LAMBDA / SNS / IAM</sub>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="projects.md">Quality platforms</a></h3>
-      <p>Automation and diagnostics that shorten the distance between failure and fix.</p>
-      <sub>API / UI / MOBILE / DEVTOOLS</sub>
-    </td>
+    <td width="33%"><a href="ai.md"><img src="./assets/featured-ai.svg" alt="AI systems: agents with boundaries — skills, SOPs, scoped tools, evidence-based evaluation" width="100%"></a></td>
+    <td width="33%"><a href="aws.md"><img src="./assets/featured-cloud.svg" alt="Cloud systems: infrastructure that explains itself — clear ownership, least privilege, safe delivery" width="100%"></a></td>
+    <td width="33%"><a href="projects.md"><img src="./assets/featured-quality.svg" alt="Quality platforms: feedback that leads to a fix — failure signals people can act on" width="100%"></a></td>
   </tr>
 </table>
 

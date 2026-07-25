@@ -8,7 +8,7 @@
   <a href="contact.md">Contact</a>
 </div>
 
-# Content
+<img src="./assets/header-content.svg" alt="Content" width="100%">
 
 <div align="center">
   <img src="https://img.shields.io/badge/Build%20%C2%B7%20Share%20%C2%B7%20Repeat-0f766e?style=flat-square" alt="Build, share, repeat">

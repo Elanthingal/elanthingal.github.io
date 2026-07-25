@@ -8,7 +8,7 @@
   <a href="contact.md">Contact</a>
 </div>
 
-# AI Systems
+<img src="./assets/header-ai.svg" alt="AI Systems" width="100%">
 
 <div align="center">
   <img src="https://img.shields.io/badge/Agent%20engineering-0f766e?style=flat-square" alt="Agent engineering">
