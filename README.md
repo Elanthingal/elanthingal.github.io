@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/profile-hero.svg" alt="Elanthingal Chandrasekaran - quality engineering and cloud systems" width="100%">
   <p>
-    <a href="https://elanthingal.github.io/Elanthingal"><img src="./assets/link-open-site.svg" alt="Open portfolio site" height="30"></a>
+    <a href="https://elanthingal.github.io/"><img src="./assets/link-open-site.svg" alt="Open portfolio site" height="30"></a>
   </p>
   <p>
     <a href="experience.md"><img src="./assets/nav-experience.svg" alt="Experience" height="30"></a>
