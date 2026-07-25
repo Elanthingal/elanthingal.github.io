@@ -2,13 +2,14 @@
   <img src="./assets/profile-hero.svg" alt="Elanthingal Chandrasekaran - quality engineering and cloud systems" width="100%">
   <p>
     <a href="https://elanthingal.github.io/"><strong>Open portfolio site &nearr;</strong></a>
-    &nbsp;&middot;&nbsp;
-    <a href="experience.md">Experience</a> ·
-    <a href="projects.md">Projects</a> ·
-    <a href="ai.md">AI systems</a> ·
-    <a href="aws.md">AWS work</a> ·
-    <a href="content.md">Content</a> ·
-    <a href="contact.md">Contact</a>
+  </p>
+  <p>
+    <a href="experience.md"><img src="./assets/nav-experience.svg" alt="Experience" height="30"></a>
+    <a href="projects.md"><img src="./assets/nav-projects.svg" alt="Projects" height="30"></a>
+    <a href="ai.md"><img src="./assets/nav-ai.svg" alt="AI systems" height="30"></a>
+    <a href="aws.md"><img src="./assets/nav-aws.svg" alt="AWS work" height="30"></a>
+    <a href="content.md"><img src="./assets/nav-content.svg" alt="Content" height="30"></a>
+    <a href="contact.md"><img src="./assets/nav-contact.svg" alt="Contact" height="30"></a>
   </p>
   <p>
     <a href="https://github.com/Elanthingal">

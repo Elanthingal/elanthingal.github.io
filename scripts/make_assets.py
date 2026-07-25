@@ -185,8 +185,29 @@ def hero() -> None:
         "Elanthingal Chandrasekaran — make complex software easier to trust. Quality engineering, cloud, AI systems.")
 
 
+def nav_chips() -> None:
+    # DM Mono at 12px is ~7.3px per char; chip width = text + padding
+    items = [
+        ("home", "HOME"),
+        ("experience", "EXPERIENCE"),
+        ("projects", "PROJECTS"),
+        ("ai", "AI SYSTEMS"),
+        ("aws", "AWS WORK"),
+        ("content", "CONTENT"),
+        ("contact", "CONTACT"),
+    ]
+    for slug, label in items:
+        w = int(len(label) * 8.6) + 36
+        body = f"""
+  <rect x="1" y="1" width="{w - 2}" height="30" fill="{PAPER_LIGHT}" stroke="{LINE}"/>
+  <text x="{w / 2}" y="21" text-anchor="middle" class="m" font-size="12" fill="{MUTED}">{label}</text>
+"""
+        svg(f"nav-{slug}.svg", w, 32, body, label)
+
+
 if __name__ == "__main__":
     print("Generating SVG assets:")
+    nav_chips()
     hero()
     pillars()
     workbench()
