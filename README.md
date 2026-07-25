@@ -1,6 +1,8 @@
 <div align="center">
   <img src="./assets/profile-hero.svg" alt="Elanthingal Chandrasekaran - quality engineering and cloud systems" width="100%">
   <p>
+    <a href="https://elanthingal.github.io/Elanthingal/"><strong>Open portfolio site &nearr;</strong></a>
+    &nbsp;&middot;&nbsp;
     <a href="experience.md">Experience</a> ·
     <a href="projects.md">Projects</a> ·
     <a href="ai.md">AI systems</a> ·
@@ -32,75 +34,148 @@
   <img src="https://img.shields.io/github/watchers/Elanthingal/Elanthingal?style=flat-square&label=Profile%20watchers" alt="Profile repository watchers">
 </p>
 
-## The Short Version
+<h2 align="center">Engineering systems that are easier to trust.</h2>
 
-I am a Senior Software Development Engineer in Test focused on quality
-engineering, test automation, cloud systems, and reliable software delivery.
-I build practical systems that make feedback faster and failures easier to
-understand.
+<p align="center">
+  I am a Senior SDET building quality platforms, cloud automation, and
+  <br>
+  measurable AI workflows that turn complex failure into useful feedback.
+</p>
 
-> Good engineering turns complexity into a system people can trust.
+<p align="center">
+  <a href="contact.md"><strong>Work with me</strong></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="projects.md"><strong>See the systems</strong></a>
+</p>
 
-## What I Build
+<br>
 
 <table>
   <tr>
-    <td width="50%">
-      <strong>Quality engineering</strong><br>
-      Risk-based validation, release confidence, and useful failure signals.
+    <td align="center" width="25%" bgcolor="#f0fdfa">
+      <strong>01</strong><br>
+      <sub>QUALITY</sub><br>
+      Test strategy<br>and release confidence
     </td>
-    <td width="50%">
-      <strong>Cloud systems</strong><br>
-      AWS infrastructure, event-driven workloads, private networking, and IAM.
+    <td align="center" width="25%" bgcolor="#eff6ff">
+      <strong>02</strong><br>
+      <sub>CLOUD</sub><br>
+      Event-driven<br>AWS systems
     </td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Test automation</strong><br>
-      Maintainable automation across services, web, and mobile experiences.
+    <td align="center" width="25%" bgcolor="#f8fafc">
+      <strong>03</strong><br>
+      <sub>AI SYSTEMS</sub><br>
+      Agents with<br>bounded behavior
     </td>
-    <td>
-      <strong>Developer tooling</strong><br>
-      Tools and workflows that improve feedback loops and productivity.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <strong>AI agent systems</strong><br>
-      Bounded agents, skills, SOPs, and scoped tool routing.
-    </td>
-    <td>
-      <strong>Deterministic evaluation</strong><br>
-      Ground truth, quality gates, evidence, and measurable outcomes.
+    <td align="center" width="25%" bgcolor="#fff7ed">
+      <strong>04</strong><br>
+      <sub>OPERATIONS</sub><br>
+      Observable paths<br>and safe recovery
     </td>
   </tr>
 </table>
 
-## Selected Themes
+## The Workbench
 
-| Quality | Cloud | Operations |
-| --- | --- | --- |
-| Test strategy and automation | AWS CDK and Lambda | Failure analysis |
-| API, UI, and mobile validation | SNS, VPC, and IAM | Deployment safety |
-| Agent evaluation and benchmarks | Infrastructure as code | Observable systems |
+<table>
+  <tr>
+    <td width="52%" valign="top">
+      <h3>What I am building</h3>
+      <p>
+        Practical engineering tools that make feedback faster, failures
+        clearer, and delivery safer.
+      </p>
+      <p>
+        <strong>Now:</strong> deterministic benchmarks for AI agents,
+        quality gates for generated code, and self-hosted automation with
+        explicit operator controls.
+      </p>
+      <p>
+        <a href="ai.md">Open the AI systems page &rarr;</a>
+      </p>
+    </td>
+    <td width="48%" valign="top">
+      <h3>How I work</h3>
+      <p>
+        <code>Understand</code> &rarr; <code>Design</code> &rarr;
+        <code>Validate</code> &rarr; <code>Operate</code>
+      </p>
+      <p>
+        I care about the path after the happy path: timeouts, permissions,
+        retries, diagnostics, rollback, and the next action after failure.
+      </p>
+      <p>
+        <a href="experience.md">Read my engineering principles &rarr;</a>
+      </p>
+    </td>
+  </tr>
+</table>
 
-## Core Stack
+## Featured Systems
 
-**Languages:** Python, JavaScript, TypeScript, C++, Bash
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3><a href="ai.md">AI agents</a></h3>
+      <p>Skills, SOPs, scoped tools, runtime boundaries, and evidence-based evaluation.</p>
+      <sub>AGENT DESIGN / BENCHMARKS / QUALITY GATES</sub>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="aws.md">Cloud systems</a></h3>
+      <p>Infrastructure and event-driven workloads designed for clear ownership and safe delivery.</p>
+      <sub>AWS CDK / LAMBDA / SNS / IAM</sub>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="projects.md">Quality platforms</a></h3>
+      <p>Automation and diagnostics that shorten the distance between failure and fix.</p>
+      <sub>API / UI / MOBILE / DEVTOOLS</sub>
+    </td>
+  </tr>
+</table>
 
-**Cloud:** AWS, AWS CDK, Lambda, SNS, VPC, IAM
+## Toolbox
 
-**Platforms:** Docker, GraphQL, Linux, Git
+<p>
+  <img src="https://img.shields.io/badge/Python-0f766e?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-1d4ed8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-854d0e?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
+  <img src="https://img.shields.io/badge/AWS-111827?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/Docker-0369a1?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Linux-1f2937?style=flat-square&logo=linux&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/GraphQL-7c2d12?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL">
+  <img src="https://img.shields.io/badge/React-155e75?style=flat-square&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/Git-f97316?style=flat-square&logo=git&logoColor=white" alt="Git">
+</p>
 
-**Application technologies:** React, Next.js, Django, Flask, Flutter, Firebase
+<details>
+  <summary><strong>More technologies</strong></summary>
+
+<p>
+  C++ / Bash / AWS CDK / Lambda / SNS / VPC / IAM / Next.js /
+  Django / Flask / Flutter / Firebase
+</p>
+
+</details>
 
 ## Explore
 
-| Page | What you will find |
-| --- | --- |
-| [Experience](experience.md) | Engineering strengths and working principles |
-| [Projects](projects.md) | Systems, problems, and architectural themes |
-| [AI systems](ai.md) | Agent design and deterministic evaluation |
-| [AWS work](aws.md) | Cloud infrastructure and event-driven design |
-| [Content](content.md) | Videos and public channels |
-| [Contact](contact.md) | Professional and social profiles |
+<table>
+  <tr>
+    <td><a href="experience.md"><strong>Experience</strong></a><br><sub>Principles and strengths</sub></td>
+    <td><a href="projects.md"><strong>Projects</strong></a><br><sub>Architecture and outcomes</sub></td>
+    <td><a href="ai.md"><strong>AI systems</strong></a><br><sub>Agents and evaluation</sub></td>
+  </tr>
+  <tr>
+    <td><a href="aws.md"><strong>AWS work</strong></a><br><sub>Cloud patterns</sub></td>
+    <td><a href="content.md"><strong>Content</strong></a><br><sub>Videos and channels</sub></td>
+    <td><a href="contact.md"><strong>Contact</strong></a><br><sub>Find me online</sub></td>
+  </tr>
+</table>
+
+<br>
+
+<p align="center">
+  <strong>Build feedback. Design for failure. Ship with confidence.</strong>
+  <br>
+  <sub>Thanks for stopping by. Follow along or reach out if you are building something difficult.</sub>
+</p>
