@@ -2,6 +2,7 @@
   <a href="README.md">Home</a> ·
   <a href="experience.md">Experience</a> ·
   <a href="projects.md">Projects</a> ·
+  <a href="ai.md">AI systems</a> ·
   <a href="aws.md">AWS work</a> ·
   <a href="content.md">Content</a> ·
   <a href="contact.md">Contact</a>
@@ -47,6 +48,18 @@ feedback loops, and make complex systems easier to operate.
 I focus on timeouts, failure boundaries, observability, safe deployment paths,
 and operational behavior under real-world conditions.
 
+### AI agent engineering
+
+I design agents as engineering systems rather than opaque chat experiences:
+clear tools, scoped instructions, reusable skills, operational rails, and
+evidence-driven outcomes.
+
+### Agent evaluation
+
+I build deterministic evaluation around nondeterministic model behavior using
+curated ground truth, repeatable scenarios, structured verdicts, and explicit
+failure conditions.
+
 ## Working Principles
 
 - Prefer fast, trustworthy feedback over noisy activity.
@@ -63,3 +76,4 @@ and operational behavior under real-world conditions.
 | Automation | Deterministic, readable, and actionable |
 | Operations | Explicit boundaries, timeouts, and recovery paths |
 | Collaboration | Clear evidence and practical next actions |
+| AI quality | Ground truth, deterministic gates, and judgeable outcomes |

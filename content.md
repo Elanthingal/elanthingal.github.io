@@ -2,6 +2,7 @@
   <a href="README.md">Home</a> ·
   <a href="experience.md">Experience</a> ·
   <a href="projects.md">Projects</a> ·
+  <a href="ai.md">AI systems</a> ·
   <a href="aws.md">AWS work</a> ·
   <a href="content.md">Content</a> ·
   <a href="contact.md">Contact</a>

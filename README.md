@@ -3,6 +3,7 @@
   <p>
     <a href="experience.md">Experience</a> ·
     <a href="projects.md">Projects</a> ·
+    <a href="ai.md">AI systems</a> ·
     <a href="aws.md">AWS work</a> ·
     <a href="content.md">Content</a> ·
     <a href="contact.md">Contact</a>
@@ -63,6 +64,16 @@ understand.
       Tools and workflows that improve feedback loops and productivity.
     </td>
   </tr>
+  <tr>
+    <td>
+      <strong>AI agent systems</strong><br>
+      Bounded agents, skills, SOPs, and scoped tool routing.
+    </td>
+    <td>
+      <strong>Deterministic evaluation</strong><br>
+      Ground truth, quality gates, evidence, and measurable outcomes.
+    </td>
+  </tr>
 </table>
 
 ## Selected Themes
@@ -71,7 +82,7 @@ understand.
 | --- | --- | --- |
 | Test strategy and automation | AWS CDK and Lambda | Failure analysis |
 | API, UI, and mobile validation | SNS, VPC, and IAM | Deployment safety |
-| Release confidence | Infrastructure as code | Observable systems |
+| Agent evaluation and benchmarks | Infrastructure as code | Observable systems |
 
 ## Core Stack
 
@@ -89,6 +100,7 @@ understand.
 | --- | --- |
 | [Experience](experience.md) | Engineering strengths and working principles |
 | [Projects](projects.md) | Systems, problems, and architectural themes |
+| [AI systems](ai.md) | Agent design and deterministic evaluation |
 | [AWS work](aws.md) | Cloud infrastructure and event-driven design |
 | [Content](content.md) | Videos and public channels |
 | [Contact](contact.md) | Professional and social profiles |

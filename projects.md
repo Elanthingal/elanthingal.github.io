@@ -2,6 +2,7 @@
   <a href="README.md">Home</a> ·
   <a href="experience.md">Experience</a> ·
   <a href="projects.md">Projects</a> ·
+  <a href="ai.md">AI systems</a> ·
   <a href="aws.md">AWS work</a> ·
   <a href="content.md">Content</a> ·
   <a href="contact.md">Contact</a>
@@ -43,6 +44,31 @@ signals.
 failure reporting, and feedback speed.
 
 **Technology:** Python, TypeScript, JavaScript, GraphQL, Linux, Git, Docker.
+
+## AI Agents and Deterministic Benchmarks
+
+**Problem:** Engineering agents need to be useful, safe, and measurable. A
+convincing demo is not enough to establish whether an agent is improving.
+
+**What I build:** Agents for test authoring, code and test migration,
+validation, and stabilization, supported by generated skills, reusable SOPs,
+and focused tool access.
+
+**Evaluation approach:** Curated ground truth describes the expected result.
+The benchmark loads commit and scenario data, calls the agent tools, evaluates
+the prediction, and produces structured outcomes such as match,
+partial-match, miss, and error.
+
+**Engineering focus:** Deterministic scenario inputs, repeatable runs,
+explicit forbidden outcomes, graph or rule-based checks where possible, and
+LLM judging only where semantic comparison is required.
+
+**Operational patterns:** Category-specific suites, hybrid gate evaluators,
+migration-fidelity checks, context-budget checks, opt-in runtime execution,
+and stage-aware artifact and result handling.
+
+**Technology:** Python, TypeScript, MCP tools, structured data, agent skills,
+and benchmark orchestration.
 
 ## Self-Hosted Automation
 
