@@ -130,7 +130,7 @@
 
 ## Toolbox
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Python-0f766e?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/TypeScript-1d4ed8?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/JavaScript-854d0e?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
@@ -145,12 +145,24 @@
 <details>
   <summary><strong>More technologies</strong></summary>
 
-<p>
-  C++ / Bash / AWS CDK / Lambda / SNS / VPC / IAM / Next.js /
-  Django / Flask / Flutter / Firebase
+<p align="center">
+  <img src="https://img.shields.io/badge/C%2B%2B-1e3a8a?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Bash-166534?style=flat-square&logo=gnubash&logoColor=white" alt="Bash">
+  <img src="https://img.shields.io/badge/AWS%20CDK-111827?style=flat-square" alt="AWS CDK">
+  <img src="https://img.shields.io/badge/Lambda-b45309?style=flat-square" alt="AWS Lambda">
+  <img src="https://img.shields.io/badge/SNS-9d174d?style=flat-square" alt="Amazon SNS">
+  <img src="https://img.shields.io/badge/VPC-0f766e?style=flat-square" alt="Amazon VPC">
+  <img src="https://img.shields.io/badge/IAM-7c2d12?style=flat-square" alt="AWS IAM">
+  <img src="https://img.shields.io/badge/Next.js-171717?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/Django-14532d?style=flat-square&logo=django&logoColor=white" alt="Django">
+  <img src="https://img.shields.io/badge/Flask-334155?style=flat-square&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/Flutter-0369a1?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Firebase-b45309?style=flat-square&logo=firebase&logoColor=white" alt="Firebase">
 </p>
 
 </details>
+
+<br>
 
 <p align="center">
   <strong>Build feedback. Design for failure. Ship with confidence.</strong>
