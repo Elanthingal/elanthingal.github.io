@@ -1,62 +1,67 @@
 <div align="center">
   <h1>Elanthingal Chandrasekaran</h1>
   <p>
-    <strong>Senior SDET at Warner Bros. Discovery</strong><br>
-    Quality engineering, test automation, and reliable software delivery
+    <strong>Senior Software Development Engineer in Test</strong><br>
+    Quality engineering, test automation, cloud systems, and reliable delivery
   </p>
   <p>
-    <a href="https://github.com/Elanthingal">GitHub profile</a>
+    <a href="experience.md">Experience</a> ·
+    <a href="projects.md">Projects</a> ·
+    <a href="aws.md">AWS work</a> ·
+    <a href="content.md">Content</a> ·
+    <a href="contact.md">Contact</a>
+  </p>
+  <p>
+    <a href="https://github.com/Elanthingal">
+      <img src="https://img.shields.io/badge/GitHub-Elanthingal-181717?style=flat-square&logo=github" alt="GitHub profile">
+    </a>
+    <a href="https://x.com/elanthingal">
+      <img src="https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white" alt="X profile">
+    </a>
+    <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn profile">
+    </a>
+    <a href="https://www.instagram.com/elanthingal">
+      <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram profile">
+    </a>
+    <a href="https://www.youtube.com/@elanthingalc">
+      <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube channel">
+    </a>
   </p>
 </div>
 
-## About
+## Profile
 
-I am a Senior SDET focused on building practical quality engineering systems
-that help teams ship reliable software with confidence.
+I build practical quality engineering systems that help teams ship reliable
+software with confidence. My work combines test strategy, automation,
+service-level validation, developer tooling, and hands-on debugging.
 
-My work combines test strategy, automation, service-level validation,
-developer tooling, and hands-on debugging. I care about fast feedback,
-maintainable test systems, and finding failure modes before they reach users.
+I care about fast feedback, maintainable systems, and making failures easier
+to understand and fix.
 
-## What I Work On
+## What I Build
 
-| Area | Focus |
+| Focus | What it looks like |
 | --- | --- |
-| Quality engineering | Test strategy, risk-based coverage, and release confidence |
+| Quality engineering | Risk-based validation, release confidence, and useful failure signals |
 | Test automation | Maintainable automation across services, web, and mobile experiences |
-| Engineering tooling | Reusable tools that improve feedback loops and developer productivity |
-| Reliability | Diagnosing failures across APIs, distributed systems, and runtime environments |
+| Cloud systems | Infrastructure as code, event-driven workloads, private networking, and IAM |
+| Developer tooling | Tools and workflows that improve feedback loops and productivity |
 
-## Technology
+## Core Stack
 
-### Languages
+**Languages:** Python, JavaScript, TypeScript, C++, Bash
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnubash&logoColor=white)
+**Cloud:** AWS, AWS CDK, Lambda, SNS, VPC, IAM
 
-### Platforms and engineering tools
+**Platforms:** Docker, GraphQL, Linux, Git
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+**Application technologies:** React, Next.js, Django, Flask, Flutter, Firebase
 
-### Application technologies
+## Explore
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-
-## Engineering Principles
-
-- Build feedback loops that are fast enough to use every day.
-- Keep automation readable, deterministic, and useful when it fails.
-- Treat observability and diagnosis as part of quality, not an afterthought.
-- Prefer simple systems that teams can operate and extend.
+- [Experience](experience.md) - engineering strengths and working principles
+- [Projects](projects.md) - selected systems and the problems they solve
+- [AWS work](aws.md) - cloud architecture and infrastructure experience
+- [Content](content.md) - videos and public channels
+- [Contact](contact.md) - professional and social profiles
