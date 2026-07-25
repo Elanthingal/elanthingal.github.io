@@ -52,17 +52,13 @@ infrastructure, or environment failure.
 
 Agent quality needs a repeatable measurement layer. My benchmark approach uses:
 
-```text
-Curated ground truth
-        |
-        v
-Repeatable commit or scenario data
-        |
-        v
-Agent tool calls
-        |
-        v
-Structured verdict and evidence report
+```mermaid
+flowchart TD
+    A["Curated ground truth"] --> B["Repeatable commit or scenario data"]
+    B --> C["Agent tool calls"]
+    C --> D["Deterministic gates<br/>(exact checks first)"]
+    D --> E["Semantic judging<br/>(only where exact checks fall short)"]
+    E --> F["Structured verdict + evidence report"]
 ```
 
 Evaluation can classify outcomes as:
@@ -104,3 +100,11 @@ The benchmark work includes reusable patterns for:
 
 The goal is not to make an agent appear intelligent. The goal is to know when
 it is correct, when it is uncertain, and when it should not be trusted.
+
+---
+
+<p align="center">
+  <a href="README.md">← Back to home</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+</p>

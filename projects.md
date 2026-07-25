@@ -31,6 +31,8 @@ deployment, and operationally useful diagnostics.
 
 **Technology:** AWS CDK, TypeScript, Python, Lambda, SNS, VPC, IAM.
 
+→ See the [AWS work page](aws.md) for the architecture shape and patterns.
+
 ## Quality Engineering Platforms
 
 **Problem:** Large product surfaces need consistent validation across services,
@@ -70,6 +72,8 @@ and stage-aware artifact and result handling.
 **Technology:** Python, TypeScript, MCP tools, structured data, agent skills,
 and benchmark orchestration.
 
+→ See the [AI systems page](ai.md) for the evaluation pipeline and verdict model.
+
 ## Self-Hosted Automation
 
 **Problem:** Useful household and personal workflows often span devices,
@@ -96,3 +100,11 @@ mode visible, and the next operational action obvious.
 2. Does failure produce enough evidence to diagnose the cause?
 3. Are permissions, timeouts, retries, and state boundaries explicit?
 4. Can the system be deployed, operated, and recovered safely?
+
+---
+
+<p align="center">
+  <a href="README.md">← Back to home</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+</p>

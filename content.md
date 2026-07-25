@@ -11,7 +11,7 @@
 # Content
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Build-share-repeat-0f766e?style=flat-square" alt="Build share repeat">
+  <img src="https://img.shields.io/badge/Build%20%C2%B7%20Share%20%C2%B7%20Repeat-0f766e?style=flat-square" alt="Build, share, repeat">
 </div>
 
 I use public channels to share engineering interests, projects, and ideas.
@@ -27,13 +27,14 @@ I use public channels to share engineering interests, projects, and ideas.
 - [Instagram](https://www.instagram.com/elanthingal)
 - [GitHub](https://github.com/Elanthingal)
 
-This page can grow as new demos, technical notes, talks, or project
-walkthroughs are published.
+This page will grow as new demos, technical notes, talks, and project
+walkthroughs are published — short workflow demos, architecture walkthroughs,
+and debugging notes that turn real failures into reusable lessons.
 
-## Suggested Formats
+---
 
-| Format | Purpose |
-| --- | --- |
-| Short demo | Show a useful workflow end to end |
-| Architecture walkthrough | Explain the important design decisions |
-| Debugging note | Turn a real failure into a reusable lesson |
+<p align="center">
+  <a href="README.md">← Back to home</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+</p>

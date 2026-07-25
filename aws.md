@@ -11,11 +11,11 @@
 # AWS Work
 
 <div align="center">
-  <img src="https://img.shields.io/badge/AWS%20CDK-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS CDK">
+  <img src="https://img.shields.io/badge/AWS%20CDK-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS CDK">
   <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=black" alt="AWS Lambda">
-  <img src="https://img.shields.io/badge/Amazon%20SNS-FF4F8B?style=flat-square&logo=amazonsimpleemailservice&logoColor=white" alt="Amazon SNS">
-  <img src="https://img.shields.io/badge/Amazon%20VPC-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon VPC">
-  <img src="https://img.shields.io/badge/AWS%20IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS IAM">
+  <img src="https://img.shields.io/badge/Amazon%20SNS-FF4F8B?style=flat-square" alt="Amazon SNS">
+  <img src="https://img.shields.io/badge/Amazon%20VPC-232F3E?style=flat-square" alt="Amazon VPC">
+  <img src="https://img.shields.io/badge/AWS%20IAM-DD344C?style=flat-square" alt="AWS IAM">
 </div>
 
 My AWS experience is centered on building cloud systems that are repeatable,
@@ -54,15 +54,19 @@ of manual console settings.
 
 ## Architecture Shape
 
-```text
-Infrastructure as code
-          |
-          v
-Private network + permissions
-          |
-          v
-Event source -> Lambda processing -> service integration
-          |
-          v
-Observable outcome and actionable feedback
+```mermaid
+flowchart TD
+    A["Infrastructure as code<br/>(AWS CDK, TypeScript)"] --> B["Private network + scoped permissions<br/>(VPC, security groups, IAM)"]
+    B --> C["Event source<br/>(SNS)"]
+    C --> D["Lambda processing"]
+    D --> E["Service integration"]
+    E --> F["Observable outcome<br/>and actionable feedback"]
 ```
+
+---
+
+<p align="center">
+  <a href="README.md">← Back to home</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+</p>

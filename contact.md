@@ -25,3 +25,11 @@ You can also find my public work and updates here:
 - [Instagram](https://www.instagram.com/elanthingal)
 
 For professional opportunities, please reach out through LinkedIn.
+
+---
+
+<p align="center">
+  <a href="README.md">← Back to home</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+</p>

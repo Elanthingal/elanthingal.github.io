@@ -77,3 +77,11 @@ failure conditions.
 | Operations | Explicit boundaries, timeouts, and recovery paths |
 | Collaboration | Clear evidence and practical next actions |
 | AI quality | Ground truth, deterministic gates, and judgeable outcomes |
+
+---
+
+<p align="center">
+  <a href="README.md">← Back to home</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/elanthingal-chandrasekaran/">Connect on LinkedIn</a>
+</p>
