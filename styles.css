@@ -20,6 +20,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  color: var(--paper-light);
+  background: var(--teal);
+}
+
 body {
   margin: 0;
   overflow-x: clip;
@@ -30,6 +35,17 @@ body {
     var(--paper);
   font-family: var(--sans);
   line-height: 1.55;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  content: "";
+  pointer-events: none;
+  opacity: .28;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 a {
@@ -109,6 +125,29 @@ a {
   color: var(--muted);
 }
 
+.desktop-nav a {
+  position: relative;
+  padding: 4px 0;
+}
+
+.desktop-nav a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--orange);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s ease;
+}
+
+.desktop-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .desktop-nav a,
 .top-link,
 .text-link,
@@ -158,6 +197,12 @@ a {
   background: var(--orange);
   border-radius: 50%;
   box-shadow: 0 0 0 5px rgba(239, 99, 61, .14);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(239, 99, 61, .18); }
+  50% { box-shadow: 0 0 0 8px rgba(239, 99, 61, .06); }
 }
 
 h1,
@@ -214,6 +259,14 @@ h2 em {
   font-size: .8rem;
   font-weight: 600;
   transition: transform .2s ease, background .2s ease;
+}
+
+.button span[aria-hidden] {
+  transition: transform .25s ease;
+}
+
+.button:hover span[aria-hidden] {
+  transform: translateX(4px);
 }
 
 .button:hover {
@@ -726,6 +779,26 @@ h2 em {
   margin-top: 33px;
 }
 
+.footer-wordmark {
+  display: block;
+  padding-top: 90px;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(18, 33, 43, .22);
+  font-size: clamp(3rem, 11.5vw, 9.5rem);
+  font-weight: 700;
+  letter-spacing: -.05em;
+  line-height: .82;
+  text-align: center;
+  user-select: none;
+  transition: -webkit-text-stroke-color .4s ease;
+}
+
+.footer-wordmark:hover {
+  -webkit-text-stroke-color: var(--teal);
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -751,6 +824,27 @@ h2 em {
 
 .reveal-delay-two {
   animation-delay: .24s;
+}
+
+/* When JS runs, below-the-fold reveals switch to scroll-triggered transitions */
+.js .reveal {
+  animation: none;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.js .reveal-delay {
+  transition-delay: .12s;
+}
+
+.js .reveal-delay-two {
+  transition-delay: .24s;
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes reveal {

@@ -29,6 +29,11 @@
   </p>
 </div>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Elanthingal&style=flat-square&color=0f766e&label=Profile+visits" alt="Profile visits">
+  <img src="https://img.shields.io/github/followers/Elanthingal?style=flat-square&label=Followers&color=12212b" alt="GitHub followers">
+</p>
+
 <h2 align="center">Engineering systems that are easier to trust.</h2>
 
 <p align="center">
@@ -142,9 +147,6 @@
   <img src="https://img.shields.io/badge/Git-f97316?style=flat-square&logo=git&logoColor=white" alt="Git">
 </p>
 
-<details>
-  <summary><strong>More technologies</strong></summary>
-
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-1e3a8a?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
   <img src="https://img.shields.io/badge/Bash-166534?style=flat-square&logo=gnubash&logoColor=white" alt="Bash">
@@ -159,8 +161,6 @@
   <img src="https://img.shields.io/badge/Flutter-0369a1?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
   <img src="https://img.shields.io/badge/Firebase-b45309?style=flat-square&logo=firebase&logoColor=white" alt="Firebase">
 </p>
-
-</details>
 
 <br>
 
